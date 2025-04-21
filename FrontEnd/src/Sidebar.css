@@ -1,0 +1,55 @@
+/* SIDEBAR STYLES */
+.app-sidebar {
+    width: 30%; /* Takes up 30% of the screen */
+    height: 100vh; /* Full viewport height */
+    border-right: 1px solid #ddd;
+  }
+  
+  .app-sidebar-header {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Space between title and button elements */
+    padding: 25px;
+  }
+  
+  .app-sidebar-header h1 {
+    margin: 0; /* Removes default margin */
+  }
+  
+  .app-sidebar-notes {
+    height: calc(100vh - 78px); /* Fills remaining height after header */
+    overflow-y: scroll; /* Allows vertical scroll for long note list */
+  }
+  
+  .app-sidebar-note {
+    padding: 25px;
+    cursor: pointer; /* Changes the pointer to indicate an interactable element */
+  }
+  
+  .sidebar-note-title {
+    display: flex; /* Horizontal layout for title and delete button */
+    justify-content: space-between; /* Space between note title and button */
+  }
+  
+  .app-sidebar-note button { /* Uniquely affects `button` (i.e. delete) elements 
+      within this class`*/ 
+    color: crimson;
+  }
+  
+  .app-sidebar-note p {
+    margin: 10px 0; /* Vertical spacing for preview text */
+  }
+  
+  .app-sidebar-note small {
+    display: block; /* Places timestamp on a new line */
+    color: #999;
+  }
+  
+  .app-sidebar-note:hover {
+    background: #caddbd;
+  }
+  
+  .app-sidebar-note.active,
+  .app-sidebar-note.active small {
+    background: rgb(84, 162, 50);
+    color: white;
+  }

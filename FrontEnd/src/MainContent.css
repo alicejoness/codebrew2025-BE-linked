@@ -1,0 +1,61 @@
+/* NOTE EDITOR/PREVIEW (MAIN) STYLES */
+.app-main {
+    width: 70%; /* Takes up 70% of the screen */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .app-main-note-edit,
+  .app-main-note-preview {
+    height: 50vh; /* Each section takes up half the screen */
+  }
+  
+  .no-active-note {
+    width: 70%; /* Same width as main area */
+    height: 100vh; /* Full height */
+    line-height: 100vh; /* Vertically centers the message */
+    text-align: center; /* Horizontally centers the message */
+    font-size: 2rem;
+    color: #999;
+  }
+  
+  /* Editing */
+  .app-main-note-edit {
+    padding: 25px;
+  }
+  
+  .app-main-note-edit input,
+  textarea {
+    display: block; /* Forces elements onto their own line */
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%;
+    height: calc(50vh - 130px); /* Dynamically sizes textarea */
+    padding: 10px;
+    resize: none; /* Prevents resizing */
+    font-size: inherit; /* Matches app font size */
+    font-family: inherit; /* Matches app font */
+  }
+  
+  .app-main-note-edit input {
+    height: 50px; /* Input field height */
+    font-size: 2rem; /* Larger title font size */
+  }
+  
+  /* Preview */
+  .app-main-note-preview {
+    border-top: 1px solid #ddd; /* Separates preview from editor */
+    overflow-y: scroll; /* Allows scroll for long previews */
+    background: rgba(0, 0, 0, 0.02); /* Subtle background tint */
+  }
+  
+  .preview-title {
+    padding: 25px 25px 0 25px; /* Top and side padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .markdown-preview {
+    padding: 0 25px 25px 25px; /* Inner spacing around preview text */
+    font-size: 1rem;
+    line-height: 2rem; /* Comfortable line spacing */
+  }
+  
