@@ -3,7 +3,7 @@ using NotesAPI.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 
-//Allow React app to access
+//Allow React app access to our API.
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
